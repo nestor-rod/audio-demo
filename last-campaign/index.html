@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="Playback gallery for the final Bible voice campaign.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <title>Final Campaign · Bible Voice Gallery</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Final campaign gallery home">
+      <span class="brand-mark" aria-hidden="true">♪</span>
+      <span>Bible Voice Gallery</span>
+    </a>
+    <span class="clip-count">Final campaign</span>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Final campaign · Listening gallery</p>
+      <h1 id="page-title">Explore the readings</h1>
+      <p class="hero-copy">Browse five Bible passages and four narrator voices. Each voice has two model-generated readings to play and compare. The model identities stay hidden behind blind version labels.</p>
+      <div class="privacy-note"><span aria-hidden="true">🎧</span> 5 passages · 4 voices · 2 versions per voice · Playback only</div>
+    </section>
+
+    <section class="passages" aria-label="Bible passages">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Playback only</p>
+          <h2>The passages</h2>
+        </div>
+      <p class="section-hint">Expand one passage and voice at a time.</p>
+      </div>
+      <div id="passage-list" class="passage-list" aria-live="polite"></div>
+    </section>
+
+    <details class="summary-details license-disclosure">
+      <summary>Voice sources and licenses</summary>
+      <div class="license-text">
+        <p><strong>Ben Tucker, Mark Nelson, and Melora:</strong> LibriVox narrator references. Voice-Zero identifies its LibriVox reference samples as CC0 / public domain. See the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noreferrer">CC0 1.0 license</a> and <a href="https://librivox.org/pages/public-domain/" target="_blank" rel="noreferrer">LibriVox public-domain policy</a>.</p>
+        <p><strong>Emma (ex04):</strong> Expresso reference under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noreferrer">CC BY-NC 4.0</a>.</p>
+        <p><strong>Harold:</strong> Not included because we couldn’t confirm the reference voice’s license; it appeared likely to be based on Morgan Freeman.</p>
+        <p class="license-footnote">These are the licenses declared for the voice-reference sources.</p>
+      </div>
+    </details>
+  </main>
+
+  <footer class="site-footer">
+    <span>Listening gallery · Final campaign</span>
+    <span>Version 1 · Version 2</span>
+  </footer>
+
+  <script src="gallery.js" defer></script>
+</body>
+</html>
