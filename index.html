@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="Listen to blind A/B/C Bible passage readings and prepare your vote for Discord.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Blind Bible Voice Evaluation</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Blind Bible Voice Evaluation home">
+      <span class="brand-mark" aria-hidden="true">♪</span>
+      <span>Bible Voice Evaluation</span>
+    </a>
+    <a class="discord-link" href="https://discord.com/channels/1101240203139633282/1387120723813863534" target="_blank" rel="noreferrer">Discord discussion <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Blind listening · Four passages · Three voices</p>
+      <h1 id="page-title">Which reading feels right to you?</h1>
+      <p class="hero-copy">Listen to the A/B/C versions for each voice, choose the reading you prefer, and mark the voices you liked. The model identities are hidden.</p>
+      <div class="privacy-note"><span aria-hidden="true">🔒</span> Your choices stay in this browser. Nothing is submitted or tracked. Copy your summary into the Discord discussion when you’re done.</div>
+    </section>
+
+    <section class="scoreboard" aria-label="Your current choices">
+      <div class="scoreboard-heading">
+        <div>
+          <p class="eyebrow">Your ballot</p>
+          <h2>Current results</h2>
+        </div>
+        <button id="clear-ballot" class="button button-quiet" type="button">Clear choices</button>
+      </div>
+      <div id="stats" class="stats-grid" aria-live="polite"></div>
+      <div class="summary-actions">
+        <button id="copy-ballot" class="button button-primary" type="button">Copy Discord summary</button>
+        <span id="copy-status" class="copy-status" role="status" aria-live="polite"></span>
+      </div>
+      <details class="summary-details">
+        <summary>Preview the message you’ll copy</summary>
+        <pre id="ballot-preview"></pre>
+      </details>
+    </section>
+
+    <section class="passages" aria-label="Bible passages">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Listen and choose</p>
+          <h2>The passages</h2>
+        </div>
+        <p class="section-hint">Open a passage, then a voice. Audio plays on demand.</p>
+      </div>
+      <div id="passage-list" class="passage-list" aria-live="polite"></div>
+    </section>
+
+    <section class="discord-next">
+      <div>
+        <p class="eyebrow">Ready to share?</p>
+        <h2>Bring your choices to Discord</h2>
+        <p>Copy your summary above and post it in the discussion. You can include all your passage choices in one message.</p>
+      </div>
+      <a class="button button-primary" href="https://discord.com/channels/1101240203139633282/1387120723813863534" target="_blank" rel="noreferrer">Open Discord <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Blind labels: A · B · C</span>
+    <span>Choose what sounds best to you.</span>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
