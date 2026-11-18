@@ -89,6 +89,8 @@ h1 { max-width: 740px; margin-bottom: 16px; font-size: clamp(2.6rem, 6vw, 4.65re
 .clip-count { padding: 6px 10px; color: #647263; background: var(--surface-muted); border-radius: 999px; font-size: .75rem; font-weight: 700; white-space: nowrap; }
 .passage-content { padding: 0 22px 22px; }
 .scripture { margin: 0 0 17px; padding: 17px 18px; color: #555e53; background: #f7f5ef; border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0; font-family: Georgia, serif; font-size: .98rem; line-height: 1.75; }
+.aligned-word { border-radius: .18em; transition: background-color .08s ease; }
+.aligned-word.is-speaking { background: #ffe49c; box-shadow: 0 0 0 2px #ffe49c; color: var(--ink); }
 .voice-list { display: grid; gap: 10px; }
 .voice-card { overflow: hidden; border: 1px solid #e6e1d6; border-radius: 14px; }
 .voice-summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; cursor: pointer; list-style: none; }
@@ -148,4 +150,9 @@ audio { display: block; width: 100%; height: 38px; }
   audio { height: 35px; }
   .discord-next { align-items: flex-start; flex-direction: column; padding: 22px; }
   .site-footer { flex-direction: column; padding: 16px 18px; }
+}
+
+@media (max-width: 400px) {
+  .audio-row.version-row { grid-template-columns: 68px minmax(0, 1fr); gap: 6px; }
+  .version-label { padding: 0 3px; font-size: .68rem; }
 }
